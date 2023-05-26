@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobilefirst_flutter/modules/auth/auth.dart';
+import 'package:mobilefirst_flutter/modules/home/home.dart';
 import 'package:mobilefirst_flutter/routes/routes.dart';
 import 'package:mobilefirst_flutter/shared/shared.dart';
 import 'package:get/get.dart';
@@ -50,7 +51,9 @@ class AuthScreen extends GetView<AuthController> {
         GradientButton(
           text: 'Sign In',
           onPressed: () {
-            Get.toNamed(Routes.AUTH + Routes.LOGIN, arguments: controller);
+
+            Get
+                 .toNamed(Routes.AUTH + Routes.LOGIN, arguments: controller);
           },
         ),
         SizedBox(height: 20.0),
